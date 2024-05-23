@@ -1,0 +1,128 @@
+/* Page layout css */
+:root {
+    background-image:url('../../../website\ background.jpg');
+    background-repeat: no-repeat;
+     background-size: cover;
+     padding: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    grid-area: a/a;
+}
+
+form{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+    "a b b"
+    "c d d"
+    "e f f"
+    "g h h"
+    "i j j1"
+    "k l l"
+    "m n n"
+
+}
+
+aside {
+    grid-area: b/b;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+#logo{
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right: 10px;
+    padding:5px;
+    background-color: rgba(0, 0, 0,0.8);
+    color: white;
+    
+    border: 2px solid black;
+    border-radius: 25px;
+
+    box-shadow:-5px 5px black;
+    font-size: 300%;
+    text-align: center;
+}
+#result{
+    margin:10px;
+    padding:5px;
+    background-color: rgba(0, 0, 0,0.8);
+    color: white;
+    
+    border: 2px solid black;
+    border-radius: 25px;
+
+    box-shadow:-5px 5px black;
+    font-size: 300%;
+    text-align: center;
+}
+#result{
+    min-height: 50px;
+}
+
+
+#canvas-parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: -3px 3px black;
+    background-color: rgba(0, 0, 0,0.2);
+}
+#name{
+    padding: 10px;
+    flex-basis: 30%;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+}
+#table
+{
+    height: 100%;
+    width: 100%;
+    grid-area: c/c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    background-color: rgba(0, 0, 0,0.6);
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: -3px 3px black;
+
+}
+.tableinput
+{
+    padding: 10px;
+    word-wrap: break-word;
+    border: 2px solid black;
+}
+#tableleft,#tableright,#table91,#table100
+{
+    border: none;
+}
+/* Mobile screens */
+@media screen and (max-width: 650px) {
+    aside{
+    }
+    #Button{
+        order:-1;
+    }
+}

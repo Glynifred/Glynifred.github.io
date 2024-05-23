@@ -1,0 +1,76 @@
+/* TEXT INPUT */
+input{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0,0.2);
+    color: rgb(0,0,0);
+    
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: -3px 3px black;
+    font-size: 16px;
+    flex-basis: 50%;
+    transition: all 0.2s;
+    
+}
+
+input:focus{
+    margin: 0;
+    background-color: rgba(0, 0, 0,0.6);
+    color: rgb(255,255,255);
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+label{
+    padding: 10px;
+    flex-basis: 30%;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Maxpanel{
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    box-shadow: none;
+    background-color: black;
+    accent-color: rgba(0, 0, 0,0.6);
+    height: 80%;
+    grid-area: j/j;
+}
+#Length
+{
+    grid-area: b/b;
+}
+#Width
+{
+    grid-area: d/d;
+}
+#Height
+{
+    grid-area: f/f;
+}
+#Angle
+{
+    grid-area: h/h;
+}
+#PanelAmount
+{
+    grid-area: l/l;
+}
+#Postcode
+{
+    grid-area: n/n;
+}
+#text
+{
+    grid-area: j1/j1;
+    color: #000000;
+}
+

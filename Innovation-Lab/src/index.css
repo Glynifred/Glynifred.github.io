@@ -1,0 +1,42 @@
+/* GLOBAL CSS FILE */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+#root{ 
+    display: grid;
+    gap: 10px;
+
+}
+
+/* Mobile screens */
+@media screen and (max-width: 650px) {
+    #root{ 
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "a"
+        "b"
+        "c";
+    
+    }
+    .button{
+        order: -1;
+    }
+
+}
+
+/* Tablet/ Desktop screens */
+@media screen and (min-width: 651px) {
+    #root{ 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "a b"
+        "c c"
+        ;
+    }
+    
+}
